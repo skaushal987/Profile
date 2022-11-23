@@ -6,7 +6,7 @@ pipeline
         choice(choices: ["Male", "Female"], description: "Choose Gender", name: "chGender")
         string(defaulValue: "", description: "Enter Name", name: "name")
         booleanParam(defaultValue: "false", description: "Give Consent", name: "consent")
-        integer(defaultValue: "", description: "Enter Age", name: "age")
+        string(defaultValue: "", description: "Enter Age", name: "age")
     }
     stages
     {
