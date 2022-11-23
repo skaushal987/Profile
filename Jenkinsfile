@@ -4,7 +4,7 @@ pipeline
     parameters
     {
         choice(choices: ["Male", "Female"], description: "Choose Gender", name: "chGender")
-        string(defaulValue: "", description: "Enter Name", name: "name")
+        string(defaultValue: "", description: "Enter Name", name: "name")
         booleanParam(defaultValue: "false", description: "Give Consent", name: "consent")
         string(defaultValue: "", description: "Enter Age", name: "age")
     }
