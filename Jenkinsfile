@@ -3,10 +3,10 @@ pipeline
     agent any
     parameters
     {
-        string(defaultValue: "", description: "Enter Name", name: "name")
-        string(defaultValue: "", description: "Enter Age", name: "age")
-        choice(choices: ["Male", "Female"], description: "Choose Gender", name: "chGender")
-        booleanParam(defaultValue: "false", description: "Give Consent", name: "consent")
+        string(defaultValue: "", description: "Enter your Name", name: "Name")
+        string(defaultValue: "", description: "Enter your Age", name: "Age")
+        choice(choices: ["Male", "Female"], description: "Choose your Gender", name: "Gender")
+        booleanParam(defaultValue: "false", description: "Do you give your consent for the information?", name: "Consent")
     }
     stages
     {
@@ -14,10 +14,10 @@ pipeline
         {
             steps
             {
-                echo "Enter your Name : ${params.name} \n"
-                echo "Enter your Age : ${params.age} \n"
-                echo "Choose your Gender: ${params.chGender} \n"
-                echo "Do you give your consent for this Information? ${params.consent}"
+                echo "Name : ${params.Name} \n"
+                echo "Age : ${params.Age} \n"
+                echo "Gender: ${params.Gender} \n"
+                echo "Do you give your consent for this Information? ${params.Consent}"
             }
         }
     }
