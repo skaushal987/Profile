@@ -3,10 +3,10 @@ pipeline
     agent any
     parameters
     {
-        choice(choices: ["Male", "Female"], description: "Choose Gender", name: "chGender")
         string(defaultValue: "", description: "Enter Name", name: "name")
-        booleanParam(defaultValue: "false", description: "Give Consent", name: "consent")
         string(defaultValue: "", description: "Enter Age", name: "age")
+        choice(choices: ["Male", "Female"], description: "Choose Gender", name: "chGender")
+        booleanParam(defaultValue: "false", description: "Give Consent", name: "consent")
     }
     stages
     {
